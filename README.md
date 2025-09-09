@@ -1,4 +1,4 @@
-# Business Customer Database
+# Customer Database
 
 A simple command-line customer database application written in C that allows you to manage customer information including email addresses, names, shoe sizes, and favorite foods. Data is stored in Tab-Separated Values (TSV) format for easy portability.
 
