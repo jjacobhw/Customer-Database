@@ -113,7 +113,7 @@ jane@example.com	Jane Smith	38	Sushi
 bob@test.org	Bob Johnson	45	Burger
 ```
 
-**Warning‼️-** Avoid using tab characters in customer data as they will interfere with the file format.
+**‼️Warning -** Avoid using tab characters in customer data as they will interfere with the file format.
 
 ## Example Session
 
@@ -208,5 +208,5 @@ valgrind --leak-check=full --show-leak-kinds=all ./businessdb
 - **Memory usage:** Approximately 50-100 bytes per customer plus overhead
 - **File I/O:** Entire database loaded into memory at startup
 
-Important 📝 - For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
+📝Important - For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
 
