@@ -176,14 +176,6 @@ Loading non-existent file
 SUCCESS: wanted -1, got -1
 ```
 
-## Data Files
-
-### Default Data File
-- **Filename:** `customers.tsv`
-- **Location:** Same directory as the executable
-- **Format:** Tab-separated values
-- **Encoding:** UTF-8 (recommended)
-
 ### Creating Sample Data
 
 You can create a sample `customers.tsv` file manually:
