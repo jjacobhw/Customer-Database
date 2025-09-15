@@ -1,9 +1,9 @@
 # Customer Database
 
-A simple command-line customer database application written in C that allows you to manage customer information including email addresses, names, shoe sizes, and favorite foods. Data is stored in Tab-Separated Values (TSV) format for easy portability.
+A simple command-line customer database application written in C that allows you to manage customer information, including email addresses, names, shoe sizes, and favorite foods. Data is stored in Tab-Separated Values (TSV) format for easy portability.
 
-This was a fun project I made for a class, where I conducted an experiment to see if 
-a customer's shoe size was correlated with the nutritional value of their favorite foods.
+This was a fun project I made for a class, where I experimented to see if a
+customer's shoe size was correlated with the nutritional value of their favorite foods.
 
 ## Features
 
@@ -22,7 +22,7 @@ a customer's shoe size was correlated with the nutritional value of their favori
 
 ## Installation
 
-### 1. Clone or Download the Repository
+### 1. Clone/Download the Repository
 
 ```bash
 # If you have the source files, ensure they're in a directory
@@ -30,8 +30,18 @@ mkdir businessdb
 cd businessdb
 # Copy all .c and .h files to this directory
 ```
+### 2. Run the Makefile (Recommended)
 
-### 2. Compile the Application
+Use 'make' to simplify compilation:
+
+```bash
+make              # Compile the application
+make test         # Compile and run tests
+make clean        # Remove compiled files
+make install      # Install to /usr/local/bin (requires sudo)
+```
+
+### 3. Compile the Application Manually
 
 ```bash
 # Compile the main application
@@ -41,21 +51,9 @@ gcc -std=c99 -Wall -Wextra -o businessdb businessdb.c database.c customer.c
 gcc -std=c99 -Wall -Wextra -o businessdb_test businessdb_test.c database.c customer.c
 ```
 
-### 3. Create a Makefile (Recommended)
+### 4. Start the Application
 
-Use the `Makefile` to simplify compilation:
-Then simply run:
-
-```bash
-make              # Compile the application
-make test         # Compile and run tests
-make clean        # Remove compiled files
-make install      # Install to /usr/local/bin (requires sudo)
-```
-
-## Usage
-
-### Starting the Application
+Run the command below to begin
 
 ```bash
 ./businessdb
@@ -115,7 +113,7 @@ jane@example.com	Jane Smith	38	Sushi
 bob@test.org	Bob Johnson	45	Burger
 ```
 
-**Important:** Avoid using tab characters in customer data as they will interfere with the file format.
+**‼️Warning:** Avoid using tab characters in customer data as they will interfere with the file format.
 
 ## Example Session
 
@@ -210,5 +208,5 @@ valgrind --leak-check=full --show-leak-kinds=all ./businessdb
 - **Memory usage:** Approximately 50-100 bytes per customer plus overhead
 - **File I/O:** Entire database loaded into memory at startup
 
-FYI: For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
+Important 📝 - For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
 
