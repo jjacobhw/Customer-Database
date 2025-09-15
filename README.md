@@ -113,7 +113,7 @@ jane@example.com	Jane Smith	38	Sushi
 bob@test.org	Bob Johnson	45	Burger
 ```
 
-**Warning ‼️-** Avoid using tab characters in customer data as they will interfere with the file format.
+**Warning‼️-** Avoid using tab characters in customer data as they will interfere with the file format.
 
 ## Example Session
 
