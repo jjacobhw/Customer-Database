@@ -34,12 +34,12 @@ cd businessdb
 
 ```bash
 # Option 1: Use 'make' (recommended)
-make              # Compile the application
-make test         # Compile and run tests
-make clean        # Remove compiled files
+make              
+make test         
+make clean        
 make install      # Install to /usr/local/bin (requires sudo)
 
-# Option 2: Compile the main application manually and test suite (optional)
+# Option 2: Compile the application and test suite manually (optional)
 gcc -std=c99 -Wall -Wextra -o businessdb businessdb.c database.c customer.c
 
 # Test suite
