@@ -20,7 +20,7 @@ customer's shoe size was correlated with the nutritional value of their favorite
 - Make utility
 - Unix-like operating system (Linux, macOS, BSD)
 
-## Installation
+## Setup
 
 ### 1. Clone/Download the Repository
 
