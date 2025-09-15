@@ -197,14 +197,6 @@ alice@demo.com	Alice Brown	40	Salad
 EOF
 ```
 
-### Input Validation
-
-**Problem:** Application accepts invalid shoe sizes
-**Solution:** The application validates numeric input for shoe sizes. Non-numeric input will prompt for re-entry.
-
-**Problem:** Tab characters in input break the TSV format
-**Solution:** Avoid entering tab characters in names, emails, or favorite foods. Future versions will include input sanitization.
-
 ## Memory Management
 
 This application uses dynamic memory allocation. To check for memory leaks during development:
@@ -226,5 +218,5 @@ valgrind --leak-check=full --show-leak-kinds=all ./businessdb
 - **Memory usage:** Approximately 50-100 bytes per customer plus overhead
 - **File I/O:** Entire database loaded into memory at startup
 
-For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
+FYI: For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
 
