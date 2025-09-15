@@ -30,30 +30,25 @@ mkdir businessdb
 cd businessdb
 # Copy all .c and .h files to this directory
 ```
-### 2. Run the Makefile (Recommended)
-
-Use 'make' to simplify compilation:
+### 2. Compile the Application
 
 ```bash
+# Option 1: Use 'make' (recommended)
 make              # Compile the application
 make test         # Compile and run tests
 make clean        # Remove compiled files
 make install      # Install to /usr/local/bin (requires sudo)
-```
 
-### 3. Compile the Application Manually
-
-```bash
-# Compile the main application
+# Option 2: Compile the main application manually and test suite (optional)
 gcc -std=c99 -Wall -Wextra -o businessdb businessdb.c database.c customer.c
 
-# Compile the test suite (optional)
+# Test suite
 gcc -std=c99 -Wall -Wextra -o businessdb_test businessdb_test.c database.c customer.c
 ```
 
-### 4. Start the Application
+### 3. Start the Application
 
-Run the command below to begin
+Run the command to begin
 
 ```bash
 ./businessdb
@@ -113,7 +108,7 @@ jane@example.com	Jane Smith	38	Sushi
 bob@test.org	Bob Johnson	45	Burger
 ```
 
-**‼️Warning -** Avoid using tab characters in customer data as they will interfere with the file format.
+**‼️Warning:** Avoid using tab characters in customer data as they will interfere with the file format.
 
 ## Example Session
 
@@ -208,5 +203,5 @@ valgrind --leak-check=full --show-leak-kinds=all ./businessdb
 - **Memory usage:** Approximately 50-100 bytes per customer plus overhead
 - **File I/O:** Entire database loaded into memory at startup
 
-📝Important - For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
+📝Important: For datasets larger than 10,000 customers, consider implementing dynamic hash table resizing.
 
